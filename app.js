@@ -136,12 +136,74 @@
 
 
 // /******Quest. 10 *********/
-function checkPalindrome(str){
-    for(var i = 0; i < str.length; i++)
-}
+// function checkPalindrome(word){
+//     var check = "";
+//     for(var i = word.length - 1; i >= 0; i--){
+//         check += word[i];
+//     }
+//     if(check === word){
+//         alert("The word " + word + " is palindrome");
+//     }
+// }
 // checkPalindrome(prompt("Enter a word to check if it is palindrome"))
 
-// /******Quest. 1 *********/
-// /******Quest. 1 *********/
-// /******Quest. 1 *********/
+
+
+// /******Quest. 11 *********/
+// function capitalize(sentence){
+//     var words = sentence.split(" ");
+//     for(var i = 0; i < words.length; i++){
+//         words[i] = words[i][0].toUpperCase() + words[i].substr(1);
+//     }
+//     document.write(words.join(" "));
+// }
+
+// capitalize(prompt("Enter a sentence"));
+
+// b)
+// function capitalize(str){
+//     document.write(str[0].toUpperCase());    
+//     for(var i = 1; i < str.length; i++){
+//         if(str[i] === " "){
+//             document.write(str[i] + str[i+1].toUpperCase())
+//             i++;
+//         }else{
+//             document.write(str[i])
+//         }
+//     }
+// }
+
+// capitalize(prompt("Enter a sentence"));
+
+// /******Quest. 12 *********/
+// function longestWord(sentence){
+//     var words = sentence.split(" ");
+//     var longest = words[0];
+//     for(i = 0; i < words.length; i++){
+//         if(words[i].length > longest.length){
+//             longest = words[i];
+//         }        
+//     }
+    
+//     document.write("The Longest word in " + sentence + " is: " + longest);
+// }
+
+// longestWord(prompt("Enter a sentence to check longest word"));
+
+
+// /******Quest. 13 *********/
+
+function checkCharRepeat(sentence){
+    var char = "a";
+    var count = 0;
+    for(i = 0; i < sentence.length; i++){
+        if(sentence[i] === char){
+            count += 1;
+        }        
+    }
+    
+    document.write("The " + char + " is repeated: " + count + " times");
+}
+
+checkCharRepeat(prompt("Enter a sentence to check longest word"));
 // /******Quest. 1 *********/
