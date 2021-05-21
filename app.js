@@ -128,10 +128,19 @@
 
 
 // /******Quest. 9 *********/
+// var height = 10;
+// function area(width,height){
+//     return  width * height;
+// }
+// document.write("Ärea of the rectangle is: " + area(8,height));
 
 
+// /******Quest. 10 *********/
+function checkPalindrome(str){
+    for(var i = 0; i < str.length; i++)
+}
+// checkPalindrome(prompt("Enter a word to check if it is palindrome"))
 
-// /******Quest. 1 *********/
 // /******Quest. 1 *********/
 // /******Quest. 1 *********/
 // /******Quest. 1 *********/
