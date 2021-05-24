@@ -193,17 +193,30 @@
 
 // /******Quest. 13 *********/
 
-function checkCharRepeat(sentence){
-    var char = "a";
-    var count = 0;
-    for(i = 0; i < sentence.length; i++){
-        if(sentence[i] === char){
-            count += 1;
-        }        
-    }
+// function checkCharRepeat(sentence){
+//     var char = "a";
+//     var count = 0;
+//     for(i = 0; i < sentence.length; i++){
+//         if(sentence[i] === char){
+//             count += 1;
+//         }        
+//     }
     
-    document.write("The " + char + " is repeated: " + count + " times");
+//     document.write("The '" + char + "' is repeated: " + count + " times");
+// }
+
+// checkCharRepeat(prompt("Enter a sentence to check longest word"));
+
+// /******Quest. 14 *********/
+
+function calcCircumference(radius){
+    return 2 * Math.PI * radius;
 }
 
-checkCharRepeat(prompt("Enter a sentence to check longest word"));
-// /******Quest. 1 *********/
+function calcArea(radius){
+    return Math.PI * (radius**2)
+}
+
+var radius = prompt("Enter radius of the circle");
+document.write("Circumference of circle = " + (calcCircumference(radius)).toFixed(2));
+document.write("<br>Area of circle \t= " + (calcArea(radius)).toFixed(2));
